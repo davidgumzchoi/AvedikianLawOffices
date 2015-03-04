@@ -18,7 +18,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }        
             $.ajax({
-                url: "./bin/contact.php",
+                url: "/bin/contact.php",
                 type: "POST",
                 data: {
                     name: name,
@@ -44,7 +44,7 @@ $(function() {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                     .append( "</button>");
-                    $('#success > .alert-danger').append("<strong>Sorry "+firstName+" it seems that my mail server is not responding...</strong> Could you please email me directly to <a href='mailto:davidgumzchoi@gmail.com?Subject=Message from AvedikianLawOffices.com'>davidgumzchoi@gmail.com.com</a>? Sorry for the inconvenience!");
+                    $('#success > .alert-danger').append("<strong>Sorry "+firstName+" it seems that my mail server is not responding...</strong> Could you please email me directly to <a href='mailto:davidgumzchoi@gmail.com?Subject=Message from AvedikianLawOffices.com'>davidgumzchoi@gmail.com</a>? Sorry for the inconvenience!");
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
