@@ -107,7 +107,7 @@ h1 {
 	font-weight: bold;
 	font-size: 70px;
 	text-transform: uppercase;
-	text-shadow: 0px 1px 1px #333;
+	text-shadow: 3px 3px 3px #222;
 }
 
 h2 {
@@ -115,7 +115,7 @@ h2 {
 	font-family: 'UniversLTStd-Light', sans-serif;
 	font-size: 50px;
 	text-transform: uppercase;
-	text-shadow: 0px 1px 1px #333;
+	text-shadow: 3px 3px 3px #222;
 }
 
 .container.content {
@@ -137,7 +137,7 @@ h2 {
 
 #home,
 #header {
-	background: url("../images/building.jpg") no-repeat center center fixed; 
+	background: url("../images/walnutcreek.jpg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -154,6 +154,7 @@ h2 {
 	font-weight: bold;
 	margin: 25px auto 75px;
 	text-align: center;
+	text-shadow: none;
 }
 
 .form-control {
