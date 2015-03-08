@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Contact</title>
-	</head>
-	<body>
-	<?php
-	if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+<?php
+	if(empty($_POST['name']) ||
+	empty($_POST['email']) ||
+	empty($_POST['message']) ||
+	!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 		echo "No arguments Provided!";
 		return false;
 	}
@@ -19,6 +16,4 @@
 	$headers .= 'Reply-To: $email_address';	
 	mail($to,$email_subject,$email_body,$headers);
 	return true;
-	?>
-	</body>
-</html>
+?>
