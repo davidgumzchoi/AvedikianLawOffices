@@ -14,5 +14,15 @@
 var windowHeight = $(window).height();
 var wrapperHeight = $('.wrapper').height();
 if (windowHeight > wrapperHeight) {
+<<<<<<< HEAD
   $('.wrapper').css({'height':(windowHeight)+'px'});
 }
+=======
+  	$('.wrapper').css({'height':(windowHeight)+'px'});
+}
+
+$(function(){
+	$('#header').load('header.html'); 
+	$('#footer').load('footer.html'); 
+});
+>>>>>>> third iteration
