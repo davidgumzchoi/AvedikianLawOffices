@@ -1,6 +1,8 @@
 $(function() {
     $('input,textarea').jqBootstrapValidation({
         preventSubmit: true,
+        submitError: function($form, event, errors) {
+        },
         submitSuccess: function($form, event) {
             event.preventDefault();
             var name = $('input#name').val();  
@@ -34,7 +36,7 @@ $(function() {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-success').html('<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;')
                     .append( '</button>');
-                    $('#success > .alert-danger').append('<strong>Sorry '+firstName+' it seems that my mail server is not responding.</strong> Could you please email me directly to <a href="mailto:liza@avelaw.com?Subject=Message from AvedikianLawOffices.com">liza@avelaw.com</a>? Sorry for the inconvenience!');
+                    $('#success > .alert-danger').append('<strong>Sorry '+firstName+' it seems that our mail server is not responding.</strong> Could you please email me directly at <a href="mailto:liza@avelaw.com?Subject=Message from AvedikianLawOffices.com">liza@avelaw.com</a>? Sorry for the inconvenience!');
                     $('#success > .alert-danger').append('</div>');
                     $('#contactForm').trigger('reset');
                 },
