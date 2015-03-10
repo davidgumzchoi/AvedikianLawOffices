@@ -1,85 +1,115 @@
 @font-face {
-	font-family: 'UniversLTStd-Light';
-	src: url('font/UniversLTStd-Light.otf') format('opentype');
+	font-family: 'UniversLTStd-Bold';
+	src: url('../assets/font/UniversLTStd-Bold.otf') format('opentype');
+	src: url('../assets/font/UniversLTStd-Bold.eot');
+  	src: url('../assets/font/UniversLTStd-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../assets/font/UniversLTStd-Bold.woff2') format('woff2'),
+		url('../assets/font/UniversLTStd-Bold.woff') format('woff'),
+		url('../assets/font/UniversLTStd-Bold.ttf') format('truetype'),
+		url('../assets/font/UniversLTStd-Bold.svg#UniversLTStd-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: 'UniversLTStd-Bold';
-	src: url('font/UniversLTStd-Cn.otf') format('opentype');
+	font-family: 'UniversLTStd-Light';
+	src: url('../assets/font/UniversLTStd-Light.otf') format('opentype');
+	src: url('../assets/font/UniversLTStd-Light.eot');
+  	src: url('../assets/font/UniversLTStd-Light.eot?#iefix') format('embedded-opentype'),
+		url('../assets/font/UniversLTStd-Light.woff2') format('woff2'),
+		url('../assets/font/UniversLTStd-Light.woff') format('woff'),
+		url('../assets/font/UniversLTStd-Light.ttf') format('truetype'),
+		url('../assets/font/UniversLTStd-Light.svg#UniversLTStd-Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversLTStd-LightCn';
+	src: url('../assets/font/UniversLTStd-LightCn.otf') format('opentype');
+	src: url('../assets/font/UniversLTStd-LightCn.eot');
+  	src: url('../assets/font/UniversLTStd-LightCn.eot?#iefix') format('embedded-opentype'),
+		url('../assets/font/UniversLTStd-LightCn.woff2') format('woff2'),
+		url('../assets/font/UniversLTStd-LightCn.woff') format('woff'),
+		url('../assets/font/UniversLTStd-LightCn.ttf') format('truetype'),
+		url('../assets/font/UniversLTStd-LightCn.svg#UniversLTStd-LightCn') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 body {
 	color: #333;
-	font-family: 'UniversLTStd-Light', sans-serif;
-	font-size: 16px;
+	font-family: 'UniversLTStd-LightCn', sans-serif;
+	font-size: 14px;
 	margin: 0;
 	padding: 0;
+	text-transform: uppercase;
 }
 
 .navbar-brand img {
 	height: 50px;
-	margin-top: -15px;
-}
-
-@media (min-width:768px) {
-	.navbar-default {
-		background: transparent;
-		border: 0;
-		margin-top: 15px;
-	}
-
-	.navbar-brand span {
-		display: none;
-	}
-
-	.navbar-default .navbar-nav>li>a {
-		color: #fff;
-  		text-shadow: 1px 1px 0px #222;
-	}
-
-	.navbar-nav>li {
-		margin-right: 5px;
-	}
-
-	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus,
-	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus,
-	.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
-		color: #000;
-		background: #fff;
-		text-shadow: none;
-	}
-}
-
-@media (max-width:768px) {
-	.navbar-brand span {
-		position: relative;
-		top: -5px;
-	}
-}
-
-.container {
-	margin: 0 auto;
 }
 
 h1 {
 	color: #fff;
 	font-family: 'UniversLTStd-BoldCn', sans-serif;
-	font-weight: bold;
 	font-size: 70px;
-	text-transform: uppercase;
-  		text-shadow: 1px 1px 0px #222;
+	text-shadow: 1px 1px 0px #222;
 }
 
 h2 {
 	color: #bbb;
 	font-family: 'UniversLTStd-Light', sans-serif;
 	font-size: 50px;
-	text-transform: uppercase;
-  		text-shadow: 1px 1px 0px #222;
+  	text-shadow: 1px 1px 0px #222;
+}
+
+#home,
+.navigation {
+	background: url("../assets/images/bg-home.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#practice {
+	background: url("../assets/images/bg-practice.jpg") no-repeat center center fixed;
+}
+
+#people {
+	background: url("../assets/images/bg-people.jpg") no-repeat center center fixed;
+}
+
+#contact {
+	background: url("../assets/images/bg-contact.jpg") no-repeat center center fixed;
+}
+
+#header {
+	font-family: 'UniversLTStd-Light', sans-serif;
+}
+
+.navigation {
+	padding-bottom: 50px;
+}
+
+.content h3 {
+	color: #000;
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.content .divider {
+	background: #000;
+	height: 3px;
+	margin: 0 auto 25px;
+	width: 100px;
 }
 
 .container.content {
-	padding: 25px 0 100px;
+	padding-bottom: 25px;
+	padding-top: 25px;
 }
 
 .container.content ul {
@@ -95,26 +125,9 @@ h2 {
 	margin-bottom: 10px;
 }
 
-#home,
-.navigation {
-	background: url("../images/walnutcreek.jpg") no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
-.navigation {
-	height: 300px;
-}
-
-.content h1 {
-	border-bottom: 5px solid black;
-	color: #000;
-	font-weight: bold;
-	margin: 25px auto 75px;
-	text-align: center;
-	text-shadow: none;
+.content .portrait {
+	margin-bottom: 15px;
+	width: 300px;
 }
 
 .form-control {
@@ -138,8 +151,9 @@ footer p {
 }
 
 footer .social {
-	overflow: hidden;
 	float: right;
+	margin-bottom: 0;
+	overflow: hidden;
 }
 
 footer .social li {
@@ -154,4 +168,119 @@ footer .social a {
 
 footer .social a:hover {
 	color: #bbb;
+}
+
+@media (min-width:768px) {
+	.navbar .navbar-nav {
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+	}
+
+	.navbar .navbar-collapse {
+	  	text-align: center;
+	}
+	.navbar-brand {
+		display: none;
+	}
+
+	.navbar-brand img {
+		margin-top: -15px;
+	}
+
+	.navbar>.container .navbar-brand,
+	.navbar>.container-fluid .navbar-brand {
+		margin-left: 0;
+	}
+
+	.navbar-default {
+		background: transparent;
+		border: 0;
+		margin-top: 15px;
+	}
+
+	.navbar-nav>li>.dropdown-menu {
+		margin-left: -1px;
+	}
+
+	.dropdown-menu>li>a {
+		padding: 15px;
+	}
+
+	.navbar-brand span {
+		display: none;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		color: #fff;
+  		text-shadow: 1px 1px 0px #222;
+	}
+
+	.navbar-nav>li {
+		margin-right: 5px;
+	}
+
+	.navbar-default .navbar-nav>li>a:hover,
+	.navbar-default .navbar-nav>li>a:focus,
+	.navbar-default .navbar-nav>.active>a,
+	.navbar-default .navbar-nav>.active>a:hover,
+	.navbar-default .navbar-nav>.active>a:focus,
+	.navbar-default .navbar-nav>.open>a,
+	.navbar-default .navbar-nav>.open>a:hover,
+	.navbar-default .navbar-nav>.open>a:focus {
+		color: #000;
+		background: #fff;
+		text-shadow: none;
+	}
+
+	.navbar-default .navbar-nav>li>.navbar-brand:hover {
+		background: transparent;
+	}
+}
+
+@media (max-width:767px) {
+	.navbar-brand {
+		padding: 0;
+	}
+
+	.nav>li>.navbar-brand {
+		display: none;
+	}
+
+	footer {
+		padding: 25px 0;
+	}
+
+	.navigation {
+		padding-bottom: 0;
+	}
+}
+
+@media (max-width: 375px) {
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		background: #f8f8f8;
+		position: absolute;
+		width: 100%;
+	}
+
+	.navbar-brand span {
+		font-size: 14px;
+	}
+
+	h1 {
+		font-size: 60px;
+	}
+
+	h2 {
+		font-size: 50px;
+	}
+
+@media (max-width: 320px) {
+	h1 {
+		font-size: 50px;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
 }
