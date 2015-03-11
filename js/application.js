@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Something that sends an email to send a message
 
 <<<<<<< HEAD
@@ -25,6 +26,10 @@ if (windowHeight > wrapperHeight) {
 +Headshots:  We have the headshot photos – I will forward in a separate email.
 */
 >>>>>>> 146ba87... third iteration responsive
+=======
+// Images to load faster
+// Fix contact form
+>>>>>>> 7d883f6... third iteration complete
 
 $(function(){
 	$('#header').load('header.html'); 
@@ -35,6 +40,7 @@ $(function(){
 =======
 
 // Document Window Height
+<<<<<<< HEAD
 
 if ($('#home').length) {
 	$(window).load(function() {
@@ -47,3 +53,17 @@ if ($('#home').length) {
 	})
 }
 >>>>>>> 146ba87... third iteration responsive
+=======
+if (!window.matchMedia('(max-width: 375px)').matches) {
+	if ($('#home').length) {
+		$(window).load(function() {
+			var windowHeight = $(window).height();
+			var wrapperHeight = $('.wrapper').height();
+			var footerHeight = $('#footer').outerHeight();
+			if (windowHeight > wrapperHeight) {
+			  	$('.wrapper').css({'height':(windowHeight - footerHeight)+'px'});
+			}
+		})
+	}
+}
+>>>>>>> 7d883f6... third iteration complete

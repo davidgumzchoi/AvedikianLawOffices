@@ -46,6 +46,11 @@ body {
 	text-transform: uppercase;
 }
 
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+	cursor: pointer;
+}
+
 .navbar-brand img {
 	height: 50px;
 }
@@ -64,33 +69,33 @@ h2 {
   	text-shadow: 1px 1px 0px #222;
 }
 
-#home,
 .navigation {
-	background: url("../assets/images/bg-home.jpg") no-repeat center center fixed;
+	background: url('') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
 
+#home {
+	background-image: url("../assets/images/bg-home.jpg");
+	min-height: 375px;
+}
+
 #practice {
-	background: url("../assets/images/bg-practice.jpg") no-repeat center center fixed;
+	background-image: url("../assets/images/bg-practice.jpg");
 }
 
 #people {
-	background: url("../assets/images/bg-people.jpg") no-repeat center center fixed;
+	background-image: url("../assets/images/bg-people.jpg");
 }
 
 #contact {
-	background: url("../assets/images/bg-contact.jpg") no-repeat center center fixed;
+	background-image: url("../assets/images/bg-contact.jpg");
 }
 
 #header {
 	font-family: 'UniversLTStd-Light', sans-serif;
-}
-
-.navigation {
-	padding-bottom: 50px;
 }
 
 .content h3 {
@@ -196,7 +201,7 @@ footer .social a:hover {
 	.navbar-default {
 		background: transparent;
 		border: 0;
-		margin-top: 15px;
+		padding-top: 15px;
 	}
 
 	.navbar-nav>li>.dropdown-menu {
@@ -253,6 +258,10 @@ footer .social a:hover {
 
 	.navigation {
 		padding-bottom: 0;
+	}
+
+	.portraitContainer {
+		text-align: center;
 	}
 }
 
