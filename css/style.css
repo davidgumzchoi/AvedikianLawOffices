@@ -80,7 +80,7 @@ h2 {
 }
 
 #people {
-	background-image: url("../assets/images/bg-people.jpg");
+	background-image: url("../assets/images/bg-home.jpg");
 }
 
 #contact {
@@ -185,21 +185,6 @@ footer .social a {
 footer .social a:hover {
 	color: #bbb;
 }
-
-/* temporary for image background */
-.float-right {
-	float: right;
-}
-
-#home2 {
-	background-image: url("../assets/images/bg-home2.jpg");
-}
-
-#people2 {
-	background-image: url("../assets/images/bg-people2.jpg");
-}
-
-/* delete */
 
 @media (min-width:768px) {
 	.navbar .navbar-nav {
