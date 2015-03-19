@@ -1,25 +1,12 @@
 @font-face {
-	font-family: 'UniversLTStd-Bold';
-	src: url('../assets/font/UniversLTStd-Bold.otf') format('opentype');
-	src: url('../assets/font/UniversLTStd-Bold.eot');
-  	src: url('../assets/font/UniversLTStd-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../assets/font/UniversLTStd-Bold.woff2') format('woff2'),
-		url('../assets/font/UniversLTStd-Bold.woff') format('woff'),
-		url('../assets/font/UniversLTStd-Bold.ttf') format('truetype'),
-		url('../assets/font/UniversLTStd-Bold.svg#UniversLTStd-Bold') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'UniversLTStd-Light';
-	src: url('../assets/font/UniversLTStd-Light.otf') format('opentype');
-	src: url('../assets/font/UniversLTStd-Light.eot');
-  	src: url('../assets/font/UniversLTStd-Light.eot?#iefix') format('embedded-opentype'),
-		url('../assets/font/UniversLTStd-Light.woff2') format('woff2'),
-		url('../assets/font/UniversLTStd-Light.woff') format('woff'),
-		url('../assets/font/UniversLTStd-Light.ttf') format('truetype'),
-		url('../assets/font/UniversLTStd-Light.svg#UniversLTStd-Light') format('svg');
+	font-family: 'UniversLTStd-Cn';
+	src: url('../assets/font/UniversLTStd-Cn.otf') format('opentype');
+	src: url('../assets/font/UniversLTStd-Cn.eot');
+  	src: url('../assets/font/UniversLTStd-Cn.eot?#iefix') format('embedded-opentype'),
+		url('../assets/font/UniversLTStd-Cn.woff2') format('woff2'),
+		url('../assets/font/UniversLTStd-Cn.woff') format('woff'),
+		url('../assets/font/UniversLTStd-Cn.ttf') format('truetype'),
+		url('../assets/font/UniversLTStd-Cn.svg#UniversLTStd-Cn') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -40,9 +27,13 @@
 body {
 	color: #333;
 	font-family: 'UniversLTStd-LightCn', sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	margin: 0;
 	padding: 0;
+}
+
+.navbar-default {
+	font-family: 'UniversLTStd-LightCn', sans-serif;
 	text-transform: uppercase;
 }
 
@@ -57,16 +48,18 @@ body {
 
 h1 {
 	color: #fff;
-	font-family: 'UniversLTStd-BoldCn', sans-serif;
+	font-family: 'UniversLTStd-Cn', sans-serif;
 	font-size: 70px;
-	text-shadow: 1px 1px 0px #222;
+	text-shadow: 1px 1px 5px #222;
+	text-transform: uppercase;
 }
 
 h2 {
 	color: #bbb;
-	font-family: 'UniversLTStd-Light', sans-serif;
+	font-family: 'UniversLTStd-Cn', sans-serif;
 	font-size: 50px;
-  	text-shadow: 1px 1px 0px #222;
+  	text-shadow: 1px 1px 5px #222;
+	text-transform: uppercase;
 }
 
 .navigation {
@@ -95,37 +88,51 @@ h2 {
 }
 
 #header {
-	font-family: 'UniversLTStd-Light', sans-serif;
+	font-family: 'UniversLTStd-Cn', sans-serif;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.underline {
+	text-decoration: underline;
 }
 
 .content h3 {
 	color: #000;
-	font-size: 50px;
+	font-size: 28px;
 	font-weight: bold;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .content .divider {
 	background: #000;
 	height: 3px;
 	margin: 0 auto 25px;
-	width: 100px;
+	width: 75px;
 }
 
-.container.content {
+.content .container {
 	padding-bottom: 25px;
 	padding-top: 25px;
 }
 
-.container.content ul {
+.content .container ul {
 	margin-left: 35px;
+}
+
+.content h4,
+.content ul {
+	text-transform: uppercase;
 }
 
 #contactForm ul {
 	margin-left: 5px;
 }
 
-.container.content li {
+.content .container li {
 	list-style-type: disc;
 	margin-bottom: 10px;
 }
@@ -135,12 +142,16 @@ h2 {
 	width: 300px;
 }
 
+.portraitContainer {
+	text-align: center;
+}
+
 .form-control {
 	font-size: 16px;
 	height: 40px;
 }
 
-.container.content .help-block li {
+.content .container .help-block li {
 	color: red;
 	list-style-type: none;
 }
@@ -174,6 +185,21 @@ footer .social a {
 footer .social a:hover {
 	color: #bbb;
 }
+
+/* temporary for image background */
+.float-right {
+	float: right;
+}
+
+#home2 {
+	background-image: url("../assets/images/bg-home2.jpg");
+}
+
+#people2 {
+	background-image: url("../assets/images/bg-people2.jpg");
+}
+
+/* delete */
 
 @media (min-width:768px) {
 	.navbar .navbar-nav {
@@ -218,7 +244,7 @@ footer .social a:hover {
 
 	.navbar-default .navbar-nav>li>a {
 		color: #fff;
-  		text-shadow: 1px 1px 0px #222;
+  		text-shadow: 1px 1px 5px #222;
 	}
 
 	.navbar-nav>li {
@@ -241,9 +267,26 @@ footer .social a:hover {
 	.navbar-default .navbar-nav>li>.navbar-brand:hover {
 		background: transparent;
 	}
+
+	.content {
+		padding-bottom: 50px;
+	}
 }
 
 @media (max-width:767px) {
+	.navigation .container {
+		padding: 0;
+	}
+
+	.navbar-default {
+		padding: 5px 0 5px 5px;
+	}
+
+	.navigation h1,
+	.navigation h2 {
+		padding: 0 5px;
+	}
+
 	.navbar-brand {
 		padding: 0;
 	}
@@ -260,8 +303,28 @@ footer .social a:hover {
 		padding-bottom: 0;
 	}
 
-	.portraitContainer {
-		text-align: center;
+	.navbar-nav .dropdown .dropdown-menu {
+		background-color: transparent;
+		border: 0;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		display: block;
+		float: none;
+		position: static;
+		width: auto;
+	}
+
+	.navbar-default .navbar-nav .dropdown .dropdown-menu>li>a {
+		color: #777;
+	}
+
+	.navbar-nav .dropdown .dropdown-menu>li>a {
+		line-height: 20px;
+	}
+
+	.navbar-nav .dropdown .dropdown-menu>li>a,
+	.navbar-nav .dropdown .dropdown-menu .dropdown-header {
+		padding: 5px 15px 5px 25px;
 	}
 }
 
@@ -270,10 +333,6 @@ footer .social a:hover {
 		background: #f8f8f8;
 		position: absolute;
 		width: 100%;
-	}
-
-	.navbar-brand span {
-		font-size: 14px;
 	}
 
 	h1 {

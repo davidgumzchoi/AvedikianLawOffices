@@ -1,8 +1,7 @@
 $(function() {
     $('input,textarea').jqBootstrapValidation({
         preventSubmit: true,
-        submitError: function($form, event, errors) {
-        },
+        submitError: function($form, event, errors) {},
         submitSuccess: function($form, event) {
             event.preventDefault();
             var name = $('input#name').val();  

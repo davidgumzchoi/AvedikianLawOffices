@@ -9,10 +9,10 @@
 	$name = $_POST['name'];
 	$email_address = $_POST['email'];
 	$message = $_POST['message'];
-	$to = 'davidgumzchoi@gmail.com';
+	$to = 'info@avelaw.com';
 	$email_subject = 'Contact form submitted by: $name';
 	$email_body = 'You have received a new message. \n\n'. 'Here are the details:\n \nName: $name \n '. 'Email: $email_address\n Message \n $message';
-	$headers = 'From: contacts@avedikianlawoffices.com\n';
+	$headers = 'From: Avedikian Law Offices Contact Form\n';
 	$headers .= 'Reply-To: $email_address';	
 	mail($to,$email_subject,$email_body,$headers);
 	return true;

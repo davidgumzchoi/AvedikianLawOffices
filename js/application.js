@@ -1,8 +1,5 @@
 // Images to load faster
 // Fix contact form
-// Mobile issues
-	// Dropdown
-	// Overlapping header text on home page because of document window height function
 
 $(function(){
 	$('#header').load('header.html'); 
@@ -11,7 +8,7 @@ $(function(){
 
 // Document Window Height
 if (!window.matchMedia('(max-width: 375px)').matches) {
-	if ($('#home').length) {
+	if ($('#home').length || $('#home2').length) {
 		$(window).load(function() {
 			var windowHeight = $(window).height();
 			var wrapperHeight = $('.wrapper').height();
