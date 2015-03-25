@@ -64,7 +64,7 @@ h2 {
 }
 
 .navigation {
-	background: url('') no-repeat center center fixed;
+	background: url("../assets/images/background.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -72,20 +72,8 @@ h2 {
 }
 
 #home {
-	background-image: url("../assets/images/bg-home.jpg");
+	background-image: url("../assets/images/background.jpg");
 	min-height: 375px;
-}
-
-#practice {
-	background-image: url("../assets/images/bg-practice.jpg");
-}
-
-#people {
-	background-image: url("../assets/images/bg-home.jpg");
-}
-
-#contact {
-	background-image: url("../assets/images/bg-contact.jpg");
 }
 
 #header {
@@ -131,6 +119,10 @@ h2 {
 	text-transform: uppercase;
 }
 
+.practice ul {
+	margin-bottom: 30px;
+} 
+
 #contactForm ul {
 	margin-left: 5px;
 }
@@ -140,7 +132,7 @@ h2 {
 	margin-bottom: 10px;
 }
 
-.content.people .container li {
+.people .container li {
 	margin-bottom: 0;
 }
 
