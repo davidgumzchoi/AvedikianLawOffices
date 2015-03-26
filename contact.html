@@ -48,34 +48,33 @@
 				<div class="divider"></div>
 				<form name="sentMessage" id="contactForm" novalidate="">
 			    	<legend>Email Us</legend>
-			    	<p>All fields required</p>
 				 	<div class="control-group">
 	                    <div class="controls">
-							<input type="text" class="form-control" placeholder="*Full Name" id="name" required="" data-validation-required-message="Please enter your name">
+							<input type="text" class="form-control" placeholder="Full Name" id="name" required="" data-validation-required-message="Please enter your name">
 						  	<p class="help-block"></p>
 					   	</div>
 					</div>
 					<div class="control-group">
 						<div class="controls">
-							<input type="email" class="form-control" placeholder="*Email" id="email" required="" data-validation-required-message="Please enter your email">
+							<input type="email" class="form-control" placeholder="Email" id="email" required="" data-validation-required-message="Please enter your email">
 							<p class="help-block"></p>
 						</div>
 			    	</div>
 					<div class="control-group">
 						<div class="controls">
-							<input type="text" class="form-control" placeholder="Phone Number" id="number" pattern="^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$" data-validation-required-message="Please enter valid phone number">
+							<input type="text" class="form-control" placeholder="Phone Number (optional)" id="number" pattern="^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$" data-validation-pattern-message="Please enter valid phone number">
 							<p class="help-block"></p>
 						</div>
 			    	</div>
 					<div class="control-group">
 						<div class="controls">
-							<input type="case" class="form-control" placeholder="Type of Case" id="case" data-validation-required-message="Please enter your type of case" minlength="5" data-validation-minlength-message="Min 5 characters">
+							<input type="case" class="form-control" placeholder="Type of Case (optional)" id="case" minlength="5" data-validation-minlength-message="Min 5 characters">
 							<p class="help-block"></p>
 						</div>
 			    	</div>
 					<div class="control-group">
 	                	<div class="controls">
-							<textarea rows="10" cols="100" class="form-control" placeholder="*Message" id="message" required="" data-validation-required-message="Please enter your message" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize:none"></textarea>
+							<textarea rows="10" cols="100" class="form-control" placeholder="Message" id="message" required="" data-validation-required-message="Please enter your message" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize:none"></textarea>
 							<p class="help-block"></p>
 						</div>
 					</div>
