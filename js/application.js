@@ -7,7 +7,7 @@ $(function(){
 });
 
 // Document Window Height
-if (!window.matchMedia('(max-width: 375px)').matches) {
+if (!window.matchMedia('(max-width: 425px)').matches) {
 	if ($('#home').length || $('#home2').length) {
 		$(window).load(function() {
 			var windowHeight = $(window).height();
