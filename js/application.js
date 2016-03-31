@@ -7,8 +7,8 @@ $(function(){
 });
 
 // Document Window Height
-if (!window.matchMedia('(max-width: 425px)').matches) {
-	if ($('#home').length || $('#home2').length) {
+// if (!window.matchMedia('(max-width: 375px)').matches) {
+	if ($('#home').length) {
 		$(window).load(function() {
 			var windowHeight = $(window).height();
 			var wrapperHeight = $('.wrapper').height();
@@ -18,4 +18,4 @@ if (!window.matchMedia('(max-width: 425px)').matches) {
 			}
 		})
 	}
-}
+// }
