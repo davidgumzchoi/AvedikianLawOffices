@@ -147,6 +147,10 @@ h2 {
 	height: 40px;
 }
 
+.content .map {
+	margin-top: 40px;
+}
+
 .content .container .help-block li {
 	color: red;
 	list-style-type: none;
