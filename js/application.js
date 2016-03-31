@@ -7,15 +7,14 @@ $(function(){
 });
 
 // Document Window Height
-// if (!window.matchMedia('(max-width: 375px)').matches) {
-	if ($('#home').length) {
-		$(window).load(function() {
-			var windowHeight = $(window).height();
-			var wrapperHeight = $('.wrapper').height();
-			var footerHeight = $('#footer').outerHeight();
-			if (windowHeight > wrapperHeight) {
-			  	$('.wrapper').css({'height':(windowHeight - footerHeight)+'px'});
-			}
-		})
-	}
-// }
+var $home = $('#home');
+if ($('#home').length) {
+	$(window).load(function() {
+		var windowHeight = $(window).height();
+		var wrapperHeight = $('.wrapper').height();
+		var footerHeight = $('#footer').outerHeight();
+		if (windowHeight > wrapperHeight) {
+		  	$('#home').css({'height':(windowHeight - footerHeight)+'px'});
+		}
+	})
+}
